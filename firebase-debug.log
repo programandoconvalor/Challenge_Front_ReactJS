@@ -1,0 +1,37 @@
+[debug] [2022-11-29T00:02:10.896Z] ----------------------------------------------------------------------
+[debug] [2022-11-29T00:02:10.898Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ingen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-29T00:02:10.899Z] CLI Version:   11.16.1
+[debug] [2022-11-29T00:02:10.899Z] Platform:      win32
+[debug] [2022-11-29T00:02:10.899Z] Node Version:  v16.15.0
+[debug] [2022-11-29T00:02:10.900Z] Time:          Mon Nov 28 2022 18:02:10 GMT-0600 (Central Standard Time)
+[debug] [2022-11-29T00:02:10.900Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-29T00:02:10.989Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-29T00:02:10.990Z] > authorizing via signed-in user (ingenierozepeda@gmail.com)
+[debug] [2022-11-29T00:02:10.990Z] [iam] checking project challege-juan-carlos-zepeda for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-29T00:02:10.993Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challege-juan-carlos-zepeda:testIamPermissions [none]
+[debug] [2022-11-29T00:02:10.994Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/challege-juan-carlos-zepeda:testIamPermissions x-goog-quota-user=projects/challege-juan-carlos-zepeda
+[debug] [2022-11-29T00:02:10.994Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challege-juan-carlos-zepeda:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-29T00:02:11.201Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challege-juan-carlos-zepeda:testIamPermissions 200
+[debug] [2022-11-29T00:02:11.201Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challege-juan-carlos-zepeda:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-29T00:02:11.202Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/challege-juan-carlos-zepeda/serviceAccounts/challege-juan-carlos-zepeda@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-11-29T00:02:11.202Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/challege-juan-carlos-zepeda/serviceAccounts/challege-juan-carlos-zepeda@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-11-29T00:02:11.572Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/challege-juan-carlos-zepeda/serviceAccounts/challege-juan-carlos-zepeda@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-11-29T00:02:11.572Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/challege-juan-carlos-zepeda/serviceAccounts/challege-juan-carlos-zepeda@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-11-29T00:02:11.573Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challege-juan-carlos-zepeda [none]
+[debug] [2022-11-29T00:02:11.867Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challege-juan-carlos-zepeda 200
+[debug] [2022-11-29T00:02:11.867Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challege-juan-carlos-zepeda {"projectId":"challege-juan-carlos-zepeda","projectNumber":"70204559026","displayName":"challege-juan-carlos-zepeda","name":"projects/challege-juan-carlos-zepeda","resources":{"hostingSite":"challege-juan-carlos-zepeda"},"state":"ACTIVE","etag":"1_0da22efa-61d5-436e-a5f3-2bc23d30011e"}
+[debug] [2022-11-29T00:02:19.904Z] defaultcredentials: writing to file C:\Users\ingen\AppData\Roaming\firebase\ingenierozepeda_gmail_com_application_default_credentials.json
+[debug] [2022-11-29T00:02:19.932Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challege-juan-carlos-zepeda/sites pageToken=&pageSize=10
+[debug] [2022-11-29T00:02:20.503Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/challege-juan-carlos-zepeda/sites 200
+[debug] [2022-11-29T00:02:20.504Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/challege-juan-carlos-zepeda/sites {"sites":[{"name":"projects/challege-juan-carlos-zepeda/sites/challege-juan-carlos-zepeda","defaultUrl":"https://challege-juan-carlos-zepeda.web.app","appId":"1:70204559026:web:733c70d718f188082c83ab","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-29T00:02:20.504Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:70204559026:web:733c70d718f188082c83ab/config [none]
+[debug] [2022-11-29T00:02:21.712Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:70204559026:web:733c70d718f188082c83ab/config 200
+[debug] [2022-11-29T00:02:21.712Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:70204559026:web:733c70d718f188082c83ab/config {"projectId":"challege-juan-carlos-zepeda","appId":"1:70204559026:web:733c70d718f188082c83ab","storageBucket":"challege-juan-carlos-zepeda.appspot.com","apiKey":"AIzaSyBlfK5PE7RYUp0c-54SjOPm52PIz5zOs0I","authDomain":"challege-juan-carlos-zepeda.firebaseapp.com","messagingSenderId":"70204559026"}
+[debug] [2022-11-29T00:03:13.581Z] Error: Command failed: npm.cmd i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at execSync (node:child_process:899:15)
+    at prepareFrameworks (C:\Users\ingen\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:329:42)
+    at async deploy (C:\Users\ingen\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
